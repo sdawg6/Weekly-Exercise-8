@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+<meta charset="UTF-8">
+  
 <head>
-  <meta charset="UTF-8">
   <title>Weekly Exercise 8</title>
   <!-- Created By <Senuji Thennakoon> on <11/18/2024> -->
   
@@ -22,8 +23,31 @@ background-color: yellow;
 
 /*your CSS will go here*/
 
-/* misc. styling */
+  @media (max-width: 600px) {
+    body {
+        background-color: yellow; 
+        font-size: 0.75em; 
+    }
 
+    img, p {
+        width: 100%;
+    }
+}
+  
+@media (min-width: 600px) {
+    body {
+        background-color: cyan; 
+    }
+
+    img {
+        width: 800px; 
+    }
+
+    p {
+        width: 600px; 
+    }
+} 
+  
 ul a {
 color: magenta;
 }
@@ -81,32 +105,6 @@ margin-top: 0;
 margin-bottom: 0;
 }
 
-  
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: yellow; 
-        font-size: 0.75em; 
-    }
-
-    img, p {
-        width: 100%;
-    }
-}
-  
-@media only screen and (min-width: 600px) {
-    body {
-        background-color: cyan; 
-        font-size: 1em; 
-    }
-
-    img {
-        width: 800px; 
-    }
-
-    p {
-        width: 600px; 
-    }
-}
 
 </style>
   
